@@ -6,6 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 
 @Entity
 public class Produit implements Serializable{
@@ -14,8 +19,12 @@ public class Produit implements Serializable{
 	@GeneratedValue
 	private Long id;
 	@Column(length=80)
+	@NotNull
+	//@Size(min=4,max=15) //=> Error
 	private String designation;
+	@DecimalMin("100")
 	private double prix;
+	@Min(1)
 	private int quantite;
 	public Long getId() {
 		return id;
