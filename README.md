@@ -13,3 +13,11 @@ JEE-SpringMVC avec Thymeleaf-JPA-Hibernate-Spring data
 ##Second step => la couche Web
 * Controller  /@Controller    /@Autowired for injection dependance  
 * vue = *.html / add thymeleaf    / add bootstrap 
+
+
+##Branch2
+javascript pour message alert
+
+header/footer
+
+springsecurity for login
